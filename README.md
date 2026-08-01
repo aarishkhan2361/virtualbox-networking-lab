@@ -88,10 +88,3 @@ configuration and a working VirtualBox network adapter setup.
 - Reading and interpreting interface/MAC/IP details from CLI output
 - Documenting infrastructure work clearly for a technical audience
 
-## Notes / Next Steps
-
-- [ ] Add `ip route` output to show the routing table on each VM
-- [ ] Add a network diagram (VM1 ↔ VirtualBox network ↔ VM2)
-- [ ] Optionally test with a firewall rule (e.g., block ICMP with `iptables`
-      and show the ping failing, then re-enable it) to demonstrate
-      troubleshooting skills

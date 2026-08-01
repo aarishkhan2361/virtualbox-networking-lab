@@ -32,7 +32,7 @@ Both VMs use the same "Attached to" mode and the same network **Name**
 (`labnet`) — this is what puts them on the same private L2 segment and lets
 them ping each other.
 
-![Adapter Settings](screenshots/adapter-settings.png)
+![Adapter Settings](adapter-settings.png)
 
 ## Interface Verification (`ip addr`)
 
@@ -44,7 +44,7 @@ $ ip addr
     link/ether 08:00:27:ff:49:56 brd ff:ff:ff:ff:ff:ff
     inet 192.168.10.10/24 scope global eth0
 ```
-![VM1 ip addr](screenshots/vm1-ip-addr.png)
+![VM1 ip addr](vm1-ip-addr.png)
 
 **VM2 — aarish**
 ```
@@ -54,7 +54,7 @@ $ ip addr
     link/ether 08:00:27:a2:5b:ba brd ff:ff:ff:ff:ff:ff
     inet 192.168.10.20/24 scope global eth0
 ```
-![VM2 ip addr](screenshots/vm2-ip-addr.png)
+![VM2 ip addr](vm2-ip-addr.png)
 
 ## Connectivity Test (`ping`)
 
@@ -64,7 +64,7 @@ $ ping 192.168.10.20
 8 packets transmitted, 8 received, 0% packet loss, time 7463ms
 rtt min/avg/max/mdev = 0.767/1.190/3.162/0.755 ms
 ```
-![Ping VM1 to VM2](screenshots/ping-vm1-to-vm2.png)
+![Ping VM1 to VM2](ping-vm1-to-vm2.png)
 
 **VM2 → VM1**
 ```
@@ -72,7 +72,7 @@ $ ping 192.168.10.10
 9 packets transmitted, 9 received, 0% packet loss, time 8065ms
 rtt min/avg/max/mdev = 0.621/1.475/5.727/1.517 ms
 ```
-![Ping VM2 to VM1](screenshots/ping-vm2-to-vm1.png)
+![Ping VM2 to VM1](ping-vm2-to-vm1.png)
 
 ## Result
 
